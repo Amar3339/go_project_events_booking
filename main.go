@@ -4,7 +4,7 @@ import("github.com/gin-gonic/gin",
 "net/http"
 )
 func main(){
-	server:=gin.default()
+	server:=gin.Default()
 	server.GET("events",getEvents)
 	server.Run(":8080") //localhost 8080
 }
