@@ -1,0 +1,10 @@
+POST  http://localhost:8080/create
+Content-Type: application/json
+
+{
+    "Name": "Test ankit",
+    "description": "for testing the booking function api",
+    "address": "a test location",
+    "DateTime": "2026-07-01T15:30:00Z"
+}
+
