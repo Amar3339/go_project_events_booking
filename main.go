@@ -2,13 +2,14 @@ package main
 
 import (
 	"net/http"
-
+	"example.com/db"
 	"example.com/models"
 	"github.com/gin-gonic/gin"
 )
 func main(){
 	server:=gin.Default()
-	server.GET("/events",getEvents)
+	db.InitDB()
+	server.GET("/events",getEvents) //if /events api endpoints is hit the getEvents function call and run the function.this is total meaning of this line 
 	server.GET("/home",gethome)
 	server.POST("/create",create)
 	server.POST("/events",createEvents)
