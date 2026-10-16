@@ -1,8 +1,8 @@
-POST  http://localhost:8080/create
+POST  http://localhost:8080/events
 Content-Type: application/json
 
 {
-    "Name": "Test ankit",
+    "Name": "Test1",
     "description": "for testing the booking function api",
     "address": "a test location",
     "DateTime": "2026-07-01T15:30:00Z"

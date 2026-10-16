@@ -14,8 +14,8 @@ func main(){
 	db.InitDB()
 	server.GET("/events",getEvents) //if /events api endpoints is hit the getEvents function call and run the function.this is total meaning of this line 
 	server.GET("/home",gethome)
-	server.POST("/create",create)
-	server.POST("/events",createEvents)
+
+	server.POST("/events",createEvents) //events is the api endpoint 
 	server.Run(":8080") //localhost 8080
 }
  func getEvents(context *gin.Context){
