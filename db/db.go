@@ -18,8 +18,8 @@ func InitDB() {
 	CreateTable()
 }
 func CreateTable() {
-	
-CreateEventsTable:=`
+
+	CreateEventsTable := `
  create table if not exists events(
 Id   serial primary key  ,
  Name text not null ,
@@ -28,9 +28,9 @@ description text not null ,
 DateTime timestamp,
 UserId int 
 )`
-_, err := DB.Exec(CreateEventsTable)
+	_, err := DB.Exec(CreateEventsTable)
 
-if err != nil {
-    panic(err)
-}
-}
+	if err != nil {
+		panic(err)
+	}
+}  
